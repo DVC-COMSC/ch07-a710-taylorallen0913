@@ -7,9 +7,9 @@ names = ['Bill', 'Mary']
 
 fig, ax = plt.subplots()
 
-# ******************************
-# Make your code
-# ******************************
-
+ax.bar(labels, data1, 0.8, label='Bill')
+ax.bar(labels, data2, 0.8, label='Mary')
+ax.set_title("Stacked graph for scores")
+ax.legend()
 
 fig.savefig('A10.png')
